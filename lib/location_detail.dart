@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'model/location.dart';
 
 class LocationDetail extends StatelessWidget {
+  final Location location;
+
+  LocationDetail({this.location});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hey"),
+        title: Text(location.name),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
