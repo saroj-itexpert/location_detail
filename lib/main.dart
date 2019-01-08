@@ -5,6 +5,7 @@ import 'mocks/mock_location.dart';
 import 'model/location.dart';
 
 
+
 void main() {
   final mockLocations = MockLocation.fetchAll();
   runApp(
